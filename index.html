@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Clivan Portfolio
+    </title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #0f172a, #1e293b);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: #1e293b;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* PROJECTS */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #38bdf8;
+            color: black;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        /* HOVER EFFECT */
+        .btn:hover {
+            background: #0ea5e9;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* WHATSAPP FLOAT */
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: green;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 24px;
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .projects {
+                flex-direction: column;
+            }
+        }
+
+        img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #38bdf8;
+        }
+
+        h1 {
+            color: #38bdf8;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/God willing.jpg" alt="My photo">
+    <!-- NAVBAR -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home">
+        <h1>Hello, I'm Clivan 👋</h1>
+        <p>I build simple and clean websites.</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am learning web development using VS Code.</p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects">
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <h3>My personal website</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <!-- Email -->
+        <a class="btn" href="clivanbugege03@gmail.com?subject=Website Inquiry&body=Hello, I saw your website.">📧 Email
+            Me</a>
+
+        <!-- Download CV -->
+        <a class="btn" href="cv.pdf" download>📄 Download CV</a>
+        <div>
+            <a href="https://facebook.com/Clivan Ndeda" target="_blank" class="btn">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+        </div>
+    </section>
+
+    <!-- WHATSAPP FLOAT BUTTON -->
+    <a class="whatsapp" href="https://wa.me/254711901127" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+
+</html>
